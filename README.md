@@ -1,4 +1,4 @@
-# Generating Diverse 3D Reconstructions from a Single Occluded Face Image [[video]] (https://www.youtube.com/watch?v=yb7j00pX-Ds) [[arXiv]] (https://arxiv.org/abs/2112.00879)
+# Generating Diverse 3D Reconstructions from a Single Occluded Face Image [[video]](https://www.youtube.com/watch?v=yb7j00pX-Ds) [[arXiv]](https://arxiv.org/abs/2112.00879)
 
 ```BibTex
 @inproceedings{dey2022generating,
@@ -27,9 +27,9 @@ cd diverse3dface
 conda env create -f env.yml
 ```
 
-- Download data.zip from this [[link]] (https://drive.google.com/file/d/1ki8Y3hMy9AL3F_dovLgtViT_dRhdU2fj/view?usp=sharing) and unzip in the diverse3dface directory (as diverse3dface/data)
+- Download data.zip from this [[link]](https://drive.google.com/file/d/1ki8Y3hMy9AL3F_dovLgtViT_dRhdU2fj/view?usp=sharing) and unzip in the diverse3dface directory (as diverse3dface/data)
 
-- Create a directory named pretrained_models and download the pretrained models from this [[link]] (https://drive.google.com/drive/folders/147SVY71dRsNX3sasFq1RIUpGpHP7GuXU?usp=sharing) into that folder.
+- Create a directory named pretrained_models and download the pretrained models from this [[link]](https://drive.google.com/drive/folders/147SVY71dRsNX3sasFq1RIUpGpHP7GuXU?usp=sharing) into that folder.
 
 ## Inference
 Run the inference code as:
