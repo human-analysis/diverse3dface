@@ -10,7 +10,7 @@ import numpy as np
 import pickle
 import torch.nn.functional as F
 
-from lbs import lbs, batch_rodrigues, vertices2landmarks, lbs_fullshape
+from flame_model.lbs import lbs, batch_rodrigues, vertices2landmarks, lbs_fullshape
 
 def to_tensor(array, dtype=torch.float32):
     if 'torch.tensor' not in str(type(array)):
