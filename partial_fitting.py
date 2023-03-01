@@ -396,6 +396,7 @@ class PhotometricFitting(object):
                 cv2.imwrite('{}/iterations/{}.jpg'.format(savefolder,  k), grid_image)
 
         occ_vt = self.render.image2verts(trans_vertices, occ_mask).detach()
+        occ_uv = threshold(self.render.world2uv(occ_vt))
         occ_verts_idx = occ_vt[:,:,0].bool()
         vis_verts_idx = ~ occ_verts_idx
 
@@ -421,6 +422,7 @@ class PhotometricFitting(object):
         mesh.write_ply('{}/fitted.ply'.format(savefolder))
         save_image(normalize(sampled_tex_uv),
                    '{}/fitted_uv.jpg'.format(savefolder))
+        save_image(occ_uv, '{}/occ_uv.jpg'.format(savefolder))
 
         # mesh =  Mesh(v=vertices[0].detach().cpu().numpy(), f=faces[0].cpu().numpy(), vt=self.vt, ft=self.ft,
         #              tex=normalize(sampled_tex_uv[0].cpu().numpy()))
